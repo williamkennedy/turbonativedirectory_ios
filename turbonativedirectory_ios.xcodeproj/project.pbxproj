@@ -16,6 +16,7 @@
 		FEFD5DDF2AD16D4A00C0F219 /* turbonativedirectory_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD5DDE2AD16D4A00C0F219 /* turbonativedirectory_iosTests.swift */; };
 		FEFD5DE92AD16D4A00C0F219 /* turbonativedirectory_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD5DE82AD16D4A00C0F219 /* turbonativedirectory_iosUITests.swift */; };
 		FEFD5DEB2AD16D4A00C0F219 /* turbonativedirectory_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD5DEA2AD16D4A00C0F219 /* turbonativedirectory_iosUITestsLaunchTests.swift */; };
+		FEFD5DF92AD16D8900C0F219 /* Turbo in Frameworks */ = {isa = PBXBuildFile; productRef = FEFD5DF82AD16D8900C0F219 /* Turbo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEFD5DF92AD16D8900C0F219 /* Turbo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = turbonativedirectory_ios;
+			packageProductDependencies = (
+				FEFD5DF82AD16D8900C0F219 /* Turbo */,
+			);
 			productName = turbonativedirectory_ios;
 			productReference = FEFD5DC42AD16D4800C0F219 /* turbonativedirectory_ios.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = FEFD5DBB2AD16D4800C0F219;
+			packageReferences = (
+				FEFD5DF72AD16D8800C0F219 /* XCRemoteSwiftPackageReference "turbo-ios" */,
+			);
 			productRefGroup = FEFD5DC52AD16D4800C0F219 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -602,6 +610,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FEFD5DF72AD16D8800C0F219 /* XCRemoteSwiftPackageReference "turbo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/turbo-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FEFD5DF82AD16D8900C0F219 /* Turbo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEFD5DF72AD16D8800C0F219 /* XCRemoteSwiftPackageReference "turbo-ios" */;
+			productName = Turbo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FEFD5DBC2AD16D4800C0F219 /* Project object */;
 }
